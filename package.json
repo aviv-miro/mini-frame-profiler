@@ -1,6 +1,6 @@
 {
   "name": "lib-template",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "dist/index.js",
   "repository": "git@github.com:aviv-miro/lib-test.git",
   "author": "Aviv Shaked <aviv@miro.com>",
