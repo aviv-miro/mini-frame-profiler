@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.1 (2024-05-07)
+
+
+### Features
+
+* **statistics:** the first version of statistics ([2d3c231](https://github.com/aviv-miro/lib-test/commit/2d3c2312c019632b191161f61e5a3566b1128699))
+
 ### 0.1.5 (2024-05-07)
 
 ### 0.1.4 (2024-05-07)
