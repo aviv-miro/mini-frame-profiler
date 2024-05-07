@@ -1,0 +1,7 @@
+{
+  "redirects": [
+    { "source": "index.html", "destination": "sandbox/index.html" },
+    { "source": "index", "destination": "sandbox/index.html" },
+    { "source": "/", "destination": "sandbox/index.html" }
+  ]
+}
