@@ -5,7 +5,52 @@
     <title>Sandbox</title>
 </head>
 <body>
-<p>This page is meant to serve as a sandbox for the library created in src</p>
+<canvas id="canvas"></canvas>
+<script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+
+    // Set canvas size
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const numRectangles = parseInt(prompt("Enter the number of rectangles:", '10000'), 10);
+    const rectangles = [];
+
+    // Initialize rectangles with random positions, sizes, and rotation speeds
+    for (let i = 0; i < numRectangles; i++) {
+        rectangles.push({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            size: Math.random() * 50 + 10,
+            angle: Math.random() * Math.PI * 2,
+            rotationSpeed: (Math.random() - 0.5) * 0.1
+        });
+    }
+
+    function draw() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
+
+        rectangles.forEach(rect => {
+            ctx.save(); // Save the current state
+            ctx.translate(rect.x, rect.y); // Move to the rectangle's position
+            ctx.rotate(rect.angle); // Rotate the context by the rectangle's current angle
+
+            // Draw the rectangle
+            ctx.fillStyle = `hsl(${rect.angle * 180 / Math.PI}, 100%, 50%)`;
+            ctx.fillRect(-rect.size / 2, -rect.size / 2, rect.size, rect.size);
+
+            ctx.restore(); // Restore the original state
+
+            // Update the angle for the next frame
+            rect.angle += rect.rotationSpeed;
+        });
+
+        requestAnimationFrame(draw); // Call draw again
+    }
+
+    draw(); // Start the animation
+</script>
 <script src="dist/index.js"></script>
 </body>
 </html>
