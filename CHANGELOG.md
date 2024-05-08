@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.2 (2024-05-08)
+
+
+### Features
+
+* **sandbox:** parametize the number of rotating squares ([b68c632](https://github.com/aviv-miro/lib-test/commit/b68c632a1f662ceeee7c6b7856060937d112e2d2))
+
 ### 0.1.1 (2024-05-07)
 
 
