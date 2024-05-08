@@ -1,6 +1,6 @@
 {
   "name": "mini-frame-profiler",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "dist/index.js",
   "repository": "git@github.com:aviv-miro/lib-test.git",
   "author": "Aviv Shaked <aviv@miro.com>",
